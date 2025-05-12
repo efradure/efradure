@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>documento</title>
+
+  <!-- Importa Bootstrap desde un CDN (estilos prediseñados) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <!-- Importa íconos de Bootstrap (para redes sociales y otros íconos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body>
+
+  <!-- Contenedor principal con espaciado vertical -->
+  <div class="container py-5">
+
+    <!-- Fila con 2 columnas (perfil + descripción) -->
+    <div class="row justify-content-center">
+
+      <!-- Columna del perfil (izquierda) -->
+      <div class="col-md-4">
+        <div class="profile-card perfil-box">
+          <!-- Imagen del perfil -->
+          <img src="img/image.png" alt="">
+
+          <!-- Nombre con fuente cursiva -->
+          <h3 class="mt-3 signature">Efraín Duré</h3>
+
+          <!-- datos  -->
+          <ul class="lista-datos">
+            <li>CI: 6366762</li>
+            <li>Edad: 19</li>
+            <li>Nacimiento: 11-03-2006</li>
+            <li>Nacionalidad: Paraguaya</li>
+          </ul>
+          
+          <!-- Íconos de redes sociales -->
+
+          <div class="social-icons mb-2">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/efradure" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          
+            <!-- WhatsApp con mensaje preescrito -->
+            <a href="https://wa.me/595982172289?text=Hola%20Efrain%2te%20contacto%20por%20el%20siguiente%20motivo:" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+          
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/efradure/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a> 
+          </div>
+          
+          <!-- Correo de contacto -->
+            <a href="https://mail.google.com/mail/?view=cm&to=dureefrain@mail.com" target="_blank" class="email">dureefrain@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Columna de información/descripción (derecha) -->
+      <div class="col-md-6">
+        <div class="bg-white p-4 rounded shadow-sm info-box">
+          <!-- Encabezado de bienvenida -->
+          <h2><strong>Hola! Soy Efra</strong></h2>
+
+          <!-- Descripción profesional -->
+          <p>
+            Soy estudiante de Análisis de Sistemas, con formación técnica en contabilidad y experiencia en atención al cliente. Me considero responsable, con ganas de aprender, buena actitud, cuento con conocimientos en informática, redes sociales, herramientas de oficina y diseño en Canva. Me gusta seguir aprendiendo y crecer tanto a nivel personal como profesional.
+          </p>
+
+          <!-- Sección de acordeón (desplegable) -->
+          <div class="accordion" id="accordionExample">
+
+            <!-- Acordeón 1: Experiencia -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <!-- Botón que muestra u oculta el contenido -->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experiencia">
+                  💼 Experiencia Laboral
+                </button>
+              </h2>
+              <div id="experiencia" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="mb-0"> <!--usamos "ul" para crear una lista-->
+                        <li><strong>Atención al cliente</strong></li>
+                        Mini mercado Primavera – Capiibary 2023 – 2025 <br>
+                        - Atención al público y asistencia en tareas generales <br>
+                        - Organización del local y reposición de productos <br>
+                        - Trato cordial y resolución de consultas de clientes <br>
+
+                        <li><strong>Gestión de tienda online (emprendimiento personal)</strong></li>
+                        dues store 2023-2024 <br>
+                        Emprendimiento de venta de perfiles de plataformas de streaming <br>
+                        - Atención al cliente y gestión de pedidos a través de redes sociales <br>
+                        - Diseño de contenido con Canva <br>
+                        - Manejo de publicaciones y comunicación con usuarios <br>
+                        - Adquirí experiencia en redes sociales y venta digital <br>
+
+                      </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Acordeón 2: formación -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#formacion">
+                  🎓 Datos Academicos
+                </button>
+              </h2>
+              <div id="formacion" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Universidad Nacional de Canindeyu</strong></li>
+                     Analisis de Sistemas - 2° Año en Curso <br>
+                     2024 - Actualidad <br>
+                    
+                    <li><strong>Colegio Nacional de Capiibary</strong></li>
+                    Bachillerato Técnico en Servicios – Especialidad en Contabilidad <br>
+                    Finalizada en "2023" <br>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Acordeón 3: pasatiempos -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#habilidades">
+                    🛡️ Habilidades
+                </button>
+              </h2>
+              <div id="habilidades" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                        <li>Canva: diseño de presentaciones y publicaciones</li>
+                        <li>Manejo de redes sociales (Instagram, Facebook)</li>
+                        <li>Uso general de herramientas informáticas</li>
+                        <li>Registro contable básico</li>
+                        <li>Familiaridad con elaboración de facturas y comprobantes</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+           
+             <!-- Acordeón 4: pasatiempos -->
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Habilidades">
+                    🚀 Habilidades Personales
+                  </button>
+                </h2>
+                <div id="Habilidades" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <li>Buena comunicación</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Responsabilidad y puntualidad</li>
+                    <li>Autodidacta y en constante aprendizaje</li>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (necesario para que funcione el acordeón y botones) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu script JS personalizado -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
